@@ -1,0 +1,57 @@
+/*success*/
+
+.success{
+    margin-bottom: 60px;
+    background: url("https://bit.ly/2P7GhNd") 
+    no-repeat center;
+    max-width: 940px;
+    height: 460px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.checkout-icon{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+.material-icons{
+    color: $green;
+}
+.line{
+    color: $green;
+}
+.paysuccess{
+    height: 46px;
+    margin-bottom: 50px;
+}
+.return{
+    display: block;
+    width: 300px;
+    margin: 0 auto;
+    padding: 17px;
+    font-size: $font-l;
+    color: $green;
+    line-height: 20px;
+    font-weight: bold;
+    background: $yellow;
+    &:hover{
+        background: lighten($yellow, 10%);
+    }
+    &:active{
+        background: darken($yellow, 10%);
+    }
+}
+@media(max-width: 767px){
+    .success{
+        height: 518px;
+        position: relative;
+        margin-bottom: 54px;
+    }
+    .return{
+        position: absolute;
+        width: 100%;
+        bottom: -54px;
+    }
+}
